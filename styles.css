@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    outline: 1px solid red;
+}
+
+
+aside {
+    background-image: url(images/leaves.jpg);
+    width: 20%;
+
+}
+
+.odin-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 50%
+    
+}
+
+.odin-title {
+    display: flex;
+    font-family: Norse-Bold,serif;
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.odin-info *{
+    width: 50px;
+    height: 50px;
+    
+    
+}
