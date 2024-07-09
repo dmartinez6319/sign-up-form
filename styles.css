@@ -110,11 +110,37 @@ button {
     margin-top: 20px;
 }
 
-a {
+.leaves-credit {
+    display: flex;
+    margin-top: 500px;
+    justify-content: center;
+    color: white;
+    font-weight: lighter;
+}
+
+a.login-link {
     color: darkolivegreen;
     font-weight: bolder;
 }
 
-a:link {
+a.login-link:link {
     text-decoration: none;
+}
+
+a.credit-link {
+    color: white;
+    text-decoration: underline;
+}
+
+a.credit-link:link {
+    text-decoration: underline;
+}
+
+a.unsplash-link {
+    color: white;
+    text-decoration: underline;
+}
+
+a.unsplash-link:link {
+    text-decoration: underline;
 }
