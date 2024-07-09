@@ -17,7 +17,7 @@ aside {
     background-image: url(images/leaves.jpg);
     background-size: cover;
     width: 20%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -95,6 +95,19 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.137);
+}
+
+input:invalid {
+    border-color: rgba(253, 41, 41, 0.733);
 }
 
 .button-container {
