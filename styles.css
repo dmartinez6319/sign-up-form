@@ -2,16 +2,24 @@
     font-family: Norse-Bold;
     src: url(Norse-Bold.otf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     outline: 1px solid red;
+    font-family: Mosntserrat, sans-serif;
+
 }
 
+body {
+    display: flex;
+}
 
 aside {
     background-image: url(images/leaves.jpg);
+    background-size: cover;
     width: 20%;
+    height: 100vh;
 
 }
 
@@ -19,8 +27,10 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    opacity: 50%
+    background-color: rgba(0, 0, 0, 0.479);
+    padding: 25px;
+    margin-top: 50%;
+    height: 20%;
     
 }
 
@@ -34,8 +44,36 @@ aside {
 }
 
 .odin-info *{
-    width: 50px;
+    width: 75px;
+    height: 75px;
+    
+    
+}
+
+main {
+
+}
+
+.description-container {
+    padding: 50px;
+}
+
+.signup-container {
+    background-color: rgb(99, 82, 82);
+    box-shadow: 10px, 10px;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    padding: 50px;
+}
+
+button {
     height: 50px;
-    
-    
+    width: 200px;
 }
