@@ -6,6 +6,9 @@
     <title>Sign Up Form</title>
     <script src = "script.js" defer></script>
     <link rel = "stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
 </head>
 <body>
     <aside>
@@ -14,7 +17,9 @@
             <img src="images/odin-lined.png" alt="Odin Logo">
             <p class = "odin-title">ODIN</p>
         </div>
-        <div class = "leaves-credit"></div>
+        <div class = "leaves-credit">
+            <p></p>
+        </div>
     </aside>
     <main>
         <div class = "description-container">
@@ -26,29 +31,48 @@
         </div>
         <div class = "signup-container">
             <div class = "title">
-                <h3>Let's do this!</h3>
+                <h2>Let's do this!</h3>
             </div>
             <form action = "#" method="get" class="form-signup" id = "signup-form">
-                <div class = col-1>
-                    <label for = "first-name">First Name</label>
-                    <input type="text" id = "first-name" name="first-name">
-                    <label for = "email">Email</label>
-                    <input type="email" id = "email" name="email">
-                    <label for ="password">Password</label>
-                    <input type = "password"id = "password"name="password">
-                </div>
-                <div class = col-2>
-                    <label for = "last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
-                    <label for ="phone-number">Phone Number</label>
-                    <input type = "tel" id="phone-number"name="phone-number">
-                    <label for="confirm-pass">Confirm Password</label>
-                    <input type="password"id="confirm-pass"name="confirm-pass">
-                </div>
+                <div class = "form-container">
+                    <div class = "col-1">
+                        <div class = "form-holder">
+                            <label for = "first-name">First Name</label>
+                            <input type="text" id = "first-name" name="first-name">
+                        </div>
+                        <div class = "form-holder">
+                            <label for = "email">Email*</label>
+                            <input type="email" id = "email" name="email" required>
+                        </div>
+                        <div class = "form-holder">
+                            <label for ="password">Password*</label>
+                            <input type = "password"id = "password"name="password" required>
+                        </div>
+                    </div>
+                    <div class = "col-2">
+                        <div class = "form-holder">
+                            <label for = "last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                        </div>
+                        <div class = "form-holder">
+                            <label for ="phone-number">Phone Number</label>
+                            <input type = "tel" id="phone-number"name="phone-number">
+                        </div>
+                        <div class = "form-holder">
+                            <label for="confirm-pass">Confirm Password*</label>
+                        <input type="password"id="confirm-pass"name="confirm-pass" required>
+                        </div>
+                    </div>
+            </div>
             </form>
         </div>
         <div class = "button-container">
         <button type="submit" form="signup-form">Submit</button>
+        <div class = "reminder-container">
+            <p class = "login-reminder">
+                Already have an account? <a href = "https://www.google.com/" target = "_blank" class = "login-link">Log in</a>
+            </p>
+        </div>
     </div>
     </main>
 </body>
