@@ -9,6 +9,10 @@
 
 }
 
+:root {
+    --ghost: 0;
+}
+
 body {
     display: flex;
 }
@@ -17,7 +21,7 @@ aside {
     background-image: url(images/leaves.jpg);
     background-size: cover;
     width: 20%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -49,9 +53,6 @@ aside {
     
 }
 
-main {
-
-}
 
 .description-container {
     padding: 50px;
@@ -127,7 +128,7 @@ input:focus {
     top: 120%;
     font-weight: bolder;
     color: rgb(255, 0, 0);
-    opacity: 0;
+    opacity: var(--ghost);
 }
 
 button {
